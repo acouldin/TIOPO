@@ -1,0 +1,14 @@
+{
+	"engineer": [
+		"base",
+		"bonus",
+		"hours"
+	],
+	"manager": [
+		"base",
+		"bonus"
+	],
+	"worker": [
+		"hours"
+	]
+}
