@@ -1,19 +1,7 @@
 const salarySystem = require('../systems/salary.system')
+const db = require('../fixtures/db.json')
 
 test('base test', () => {
-	const sum = {
-		"unit": "roubles",
-		"value": 1337
-	}
-	const money = {
-		"money": {
-			"value": 1488,
-			"unit": "roubles"
-		}
-	}
-
-	const result = salarySystem['base'](sum, money)
-
-	
-	expect(result.value).toBe(2825)
+  const result = salarySystem['base'](db.sum, db.money)
+  expect(result.value).toBe(db.sum.value + db.money.money.value)
 })

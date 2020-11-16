@@ -1,0 +1,23 @@
+{
+  "time": {
+    "unit": "h",
+    "value": 8
+  },
+  "rate": {
+    "unit": "roubles",
+    "value": 300
+  },
+  "sum": {
+    "unit": "roubles",
+    "value": 1337
+  },
+  "money": {
+    "money": {
+      "value": 1488,
+      "unit": "roubles"
+    }
+  },
+  "base": 10000,
+  "bonus": 1000,
+  "hours": 1
+}
