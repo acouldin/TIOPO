@@ -1,5 +1,5 @@
 const MongoSystem = require('./systems/mongo.system')
-const Commands = require('./commands')
+const сommands = require('./commands')
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -12,7 +12,7 @@ MongoSystem.connect()
 const question = () => {
 	rl.question('> ', async (answer) => {
 		const arr = answer.split(' ')
-		await Commands[arr[0]](arr)
+		await сommands[arr[0]](arr)
 		question()
 	})
 }

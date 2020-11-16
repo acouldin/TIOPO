@@ -52,6 +52,12 @@ exports.addEmployee = async employee => {
 exports.getEmployee = async name => {
 	try {
 		const candidateModel = await Employee.findOne({ name })
+
+		if (!candidateModel) {
+			console.log("Работник не найден")
+			return null
+		}
+
 		const owner = candidateModel.id
 		const type = candidateModel.type
 		const sum = JSON.parse(candidateModel.sum)
