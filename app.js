@@ -1,4 +1,4 @@
-const MongoSystem = require('./systems/mongo.system')
+const ER = require('./repositories/employee.repository')
 const сommands = require('./commands')
 const readline = require('readline')
 
@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-MongoSystem.connect()
+ER.connect()
 
 const question = () => {
   rl.question('> ', async answer => {
