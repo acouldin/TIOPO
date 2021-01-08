@@ -1,4 +1,4 @@
-const MongoSystem = require('./systems/mongo.system')
+const MongoSystem = require('./repositories/employee.repository')
 const EmployeeFactory = require('./factories/employee.factory')
 const CountSystem = require('./systems/count.system')
 const EditSalarySystem = require('./systems/edit-salary.system')

@@ -12,7 +12,7 @@ ER.connect()
 const question = () => {
   rl.question('> ', async answer => {
     const arr = answer.split(' ')
-    await сommands[arr[0]](arr)
+    if (arr[0] != '') await сommands[arr[0]](arr)
     question()
   })
 }

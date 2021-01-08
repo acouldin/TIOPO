@@ -18,6 +18,15 @@ exports.connect = async () => {
   }
 }
 
+exports.disconnect = async () => {
+  try {
+    await mongoose.disconnect()
+  } catch (e) {
+    console.log('Ошибка отключения от mongoDB', e.message)
+    process.exit(1)
+  }
+}
+
 exports.addEmployee = async employee => {
   try {
     const name = employee.name
